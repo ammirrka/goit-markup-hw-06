@@ -23,9 +23,24 @@ img{
 }
 
 .container{
-    max-width: 1158px;
+    /* width: 1158px; */
+    width: 320px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    /* padding: 0 15px 0 15px; */
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+        padding: 0 15px;
+    }
 }
 
 h1, h2, h3, p{
@@ -76,6 +91,29 @@ a.logo span{
 .header .page-nav{
     display: flex;
     align-items: center;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu-icon {}
+
+@media screen and (max-width: 767px){
+    .nav-list{
+        visibility: hidden;
+    }
+    .addresses{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .burger-menu{
+        display: none;
+    }
 }
 
 .header .page-nav .nav-list{
@@ -148,6 +186,12 @@ header address ul li a.contact-link{
 header address ul li a.contact-link:hover,
 header address ul li a.contact-link:focus{
     color: #404BBF;
+}
+
+@media screen and (max-width: 767px){ 
+    .nav-list{
+        display: none;
+    }
 }
 
 .section{
