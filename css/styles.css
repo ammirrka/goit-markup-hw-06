@@ -102,8 +102,6 @@ a.logo span{
     background-color: #fff;
 }
 
-.burger-menu-icon {}
-
 @media screen and (max-width: 767px){
     .page-nav .nav-list{
         display: none;
