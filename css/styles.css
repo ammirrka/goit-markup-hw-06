@@ -217,11 +217,9 @@ a.logo span{
 }
 
 .order-service{
-    /* padding: 188px 0; */
     color: #fff;
     margin: 0 auto;
-    /* max-width: 1440px; */
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg@1x-desk.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -230,6 +228,7 @@ a.logo span{
 @media screen and (max-width: 767px){
     .order-service{
         padding: 72px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg@1x-mob.jpg);
     }
 
     .main-h{
@@ -239,15 +238,35 @@ a.logo span{
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 767px) and (min-resolution: 192dpi){
     .order-service{
-        padding: 112px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg@2x-mob.jpg);
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
+    .order-service{
+        padding: 112px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg@1x-tab.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi){
+    .order-service{
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg@2x-tab.jpg)
+    }
+}
+
+@media screen and (min-width: 1158px) {
     .order-service {
         padding: 188px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg@1x-desk.jpg);
+    }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi){
+    .order-service {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg@2x-desk.jpg);
     }
 }
 
